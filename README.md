@@ -1,1 +1,1 @@
-# ISL-to-Malayalam-using-Openpose
+# ISL to Malayalam using Openpose
