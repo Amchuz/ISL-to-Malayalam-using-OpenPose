@@ -4,4 +4,4 @@
 
 #### Contents :
 
-- Algorithm
+- Algorithms
