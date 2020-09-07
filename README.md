@@ -94,6 +94,6 @@ The experimental results of the proposed system.
   
 ## Frontend Design : 
   
-<img src="https://github.com/Amchuz/ISL-to-Malayalam-using-Openpose/blob/master/Images/fed.gif" width="100" height="500" />
+<img src="https://github.com/Amchuz/ISL-to-Malayalam-using-Openpose/blob/master/Images/fed.gif" width="200" height="450" />
   
 Sign to text option opens the mobile camera to read and then displays the text in the text box. Text to sign option plays the video for the selected word. The video is constructed using 2D avatar. 
