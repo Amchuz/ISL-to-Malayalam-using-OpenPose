@@ -14,7 +14,7 @@
 - System Design
 - Model
 - Results
-- Frontend Design Idea
+- Frontend Design
 - Future Work
 
 ## Story : 
@@ -91,4 +91,8 @@ The experimental results of the proposed system.
 - Accuracy : 95.8%
 
 <img src="https://github.com/Amchuz/ISL-to-Malayalam-using-Openpose/blob/master/Images/result.png" width="500" height="300" />
+  
+## Frontend Design : 
+  
+![](https://github.com/Amchuz/ISL-to-Malayalam-using-Openpose/blob/master/Images/fed.gif)
   
