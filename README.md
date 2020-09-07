@@ -86,4 +86,4 @@ The experimental results of the proposed system.
 
 ### 1.Confusion Matrix : 
   
-<img src="https://github.com/Amchuz/ISL-to-Malayalam-using-Openpose/blob/master/Images/cm.png" width="500" height="300" />
+<img src="https://github.com/Amchuz/ISL-to-Malayalam-using-Openpose/blob/master/Images/cm.png" width="400" height="300" />
