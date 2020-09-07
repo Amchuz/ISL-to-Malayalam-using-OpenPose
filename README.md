@@ -84,6 +84,11 @@ Signs are read using webcam. The model saved in the pickle file is used here. 5 
   
 The experimental results of the proposed system.
 
-### 1.Confusion Matrix : 
+- Confusion Matrix : 
   
 <img src="https://github.com/Amchuz/ISL-to-Malayalam-using-Openpose/blob/master/Images/cm.png" width="400" height="300" />
+  
+- Accuracy : 95.8%
+
+<img src="https://github.com/Amchuz/ISL-to-Malayalam-using-Openpose/blob/master/Images/result.png" width="500" height="300" />
+  
