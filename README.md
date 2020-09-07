@@ -5,6 +5,8 @@
 ![](https://github.com/Amchuz/ISL-to-Malayalam-using-Openpose/blob/master/Images/demo2.gif)
 
 
+#### My System : Ubuntu 18.04.4 LTS | Intel® Core™ i3-3110M CPU @ 2.40GHz × 4 
+
 ### Contents :
 
 - Story
@@ -25,4 +27,17 @@
 - Fourth program trains the model and saves it as a pickle file. 
 - Fifth program uses the trained model to convert the signs from webcam.
 
+## Install OpenPose : 
+  
+Note : Python >= 3.6.
 
+I used the OpenPose from this Github: tf-pose-estimation. First download it:
+
+export MyRoot=$PWD
+cd src/githubs  
+git clone https://github.com/ildoonet/tf-pose-estimation  
+
+Follow its tutorial here to download the "cmu" model. As for the "mobilenet_thin", it's already inside the folder.
+
+$ cd tf-pose-estimation/models/graph/cmu  
+$ bash download.sh  
