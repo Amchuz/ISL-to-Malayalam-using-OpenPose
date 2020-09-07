@@ -12,9 +12,10 @@
 - Story
 - Install OpenPose
 - System Design
-- Main Program
-- Training Data
+- Model
 - Results
+- Frontend Design Idea
+- Future Work
 
 ## Story : 
   
@@ -47,7 +48,7 @@ The tutorial to download the "cmu" model is given <a href="https://github.com/il
   
 ![](https://github.com/Amchuz/ISL-to-Malayalam-using-Openpose/blob/master/Images/sysdesign.png)
   
-### 1. Skeleton Extraction :
+### 1.Skeleton Extraction :
   
 Skeleton extraction is done at the first part of the main program. Here Openpose library is used to extract the skeleton from the given image. 18 joints are detected and it is drawn on the image and saves it as a new image file. An image information text file is also created using Skeleton library during this phase where each value is a list with 5 values. The list is of the form [action count, clip count, image count,image label, filepath].  The list for each image is saved in the image infromation text file.  As this project is using Malayalam label, the labels were encoded before saving into the text file. 
   
@@ -57,9 +58,33 @@ Openpose also creates a text files consisting the information of each skeleton. 
   
 ![](https://github.com/Amchuz/ISL-to-Malayalam-using-Openpose/blob/master/Images/skltninfo.png)
   
-### 2. Skeleton text files to single file :
+### 2.Skeleton text files to single file :
   
 In this phase the skeleton information text files are the input files and these are combined into a single text file using the Skeleton library. This will reduce the time to process the features of each skeleton.
 
 ![](https://github.com/Amchuz/ISL-to-Malayalam-using-Openpose/blob/master/Images/singleinfo.png)
 
+### 3.Feature Extraction : 
+  
+In this phase the skeleton information text file is taken as the input and data is processed and features are saved into CSV file. Time-serials features are extracted. Raw features of individual images are converted to time-serial features calculated from multiple raw features of multiple adjacent images, including speed and normalized position. The output is saved as two CSV files, one consisting of features and other it’s corresponding labels.
+
+### 4.Training Data : 
+  
+The model is trained using the CSV file where the features are extracted. X and Y features are splitted into 70% training and 30% testing data. PCA is used to reduce the dimensionality of datasets, increasing interpretability but at the same time minimizing information loss. Classifier library is used here to train the model. In this phase any models from Nearest Neighbors, LinearSVM, Gaussian Process, Decision Tree, Random Forest, MLP, AdaBoost, Naive Bayes etc canbe selected. from the experiments the best result is given by MLP and hence it is chosen. Model is evaluated using both splitted feature files. 679 training samples and 291 testing samples. The trained model is saved into a pickle file for further use.
+
+### 5.Use trained model : 
+  
+Use trained model to convert Malayalam Sign Language into text using webcam.
+  
+## Model :
+  
+Signs are read using webcam. The model saved in the pickle file is used here. 5 adjacent images are read and displays the label with the highest score. A blackboard is displayed along with the webcam image to write the translated text. MLP Online Learning method is used in this system.
+
+## Results : 
+  
+The experimental results of the proposed system.
+
+### 1.Confusion Matrix : 
+  
+![](https://github.com/Amchuz/ISL-to-Malayalam-using-Openpose/blob/master/Images/cm.png)
+  
