@@ -15,7 +15,7 @@
 - Model
 - Results
 - Frontend Design
-- Future Work
+- Future Works
 
 ## Story : 
   
@@ -44,7 +44,7 @@ The tutorial to download the "cmu" model is given <a href="https://github.com/il
 ## System Design : 
   
   
-8  libraries  were  written  to  support  the  main  programs  in  which  5  are  used  for  mainimplementation.  The main program is divided into 5 section :  Skeleton extraction, Skeletontext  files  to  a  single  text  file,  Data  pre-processing/feature  extraction,  model  training  andtesting/final program.
+8  libraries  were  written  to  support  the  main  programs  in  which  5  are  used  for  main implementation. The main program is divided into 5 section :  Skeleton extraction, Skeleton text files to a single text file, Data pre-processing/feature extraction, model training and testing/final program.
   
 ![](https://github.com/Amchuz/ISL-to-Malayalam-using-Openpose/blob/master/Images/sysdesign.png)
   
@@ -99,3 +99,9 @@ The experimental results of the proposed system.
 Sign to text option opens the mobile camera to read and then displays the text in the text box. Text to sign option plays the video for the selected word. The video is constructed using 2D avatar. 
   
 I got the 2D avatar idea from <a href="https://github.com/yemount/pose-animator"> the github repo. </a>
+  
+## Future Works : 
+  
+  
+In this project I have developed a design for a mobile application.  This application can be implemented using Flutter as front-end and Python as back-end. This application has two options, either to convert the sign to text or text to sign. The text to sign conversion is in progress. In this feature, when the user selects a word, the video for the word is played. The video is created using a 2D vector illustration and animates its containing curves in real-time based on the recognition resulting from PoseNet and FaceMesh. It borrows the idea of skeleton-based animation from computer graphics and applies it to vector characters. This avatar is used to record video for each words.
+The sign to text feature is implemented using this project system where, clicking on the option opens the mobile camera and the model detects the skeleton of the person in front of the camera and predicts the gesture.
