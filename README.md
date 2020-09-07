@@ -97,3 +97,5 @@ The experimental results of the proposed system.
 <img src="https://github.com/Amchuz/ISL-to-Malayalam-using-Openpose/blob/master/Images/fed.gif" width="300" height="550" />
   
 Sign to text option opens the mobile camera to read and then displays the text in the text box. Text to sign option plays the video for the selected word. The video is constructed using 2D avatar. 
+  
+I got the 2D avatar idea from <a href="https://github.com/yemount/pose-animator"> the github repo. </a>
