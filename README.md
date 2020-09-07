@@ -45,4 +45,4 @@ The tutorial to download the "cmu" model is given <a href="https://github.com/il
   
 8  libraries  were  written  to  support  the  main  programs  in  which  5  are  used  for  mainimplementation.  The main program is divided into 5 section :  Skeleton extraction, Skeletontext  files  to  a  single  text  file,  Data  pre-processing/feature  extraction,  model  training  andtesting/final program.
   
-![](https://github.com/Amchuz/ISL-to-Malayalam-using-Openpose/blob/master/Images/sysdesign.gif)
+![](https://github.com/Amchuz/ISL-to-Malayalam-using-Openpose/blob/master/Images/sysdesign.png)
