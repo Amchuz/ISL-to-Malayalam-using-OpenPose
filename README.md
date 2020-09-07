@@ -46,3 +46,14 @@ The tutorial to download the "cmu" model is given <a href="https://github.com/il
 8  libraries  were  written  to  support  the  main  programs  in  which  5  are  used  for  mainimplementation.  The main program is divided into 5 section :  Skeleton extraction, Skeletontext  files  to  a  single  text  file,  Data  pre-processing/feature  extraction,  model  training  andtesting/final program.
   
 ![](https://github.com/Amchuz/ISL-to-Malayalam-using-Openpose/blob/master/Images/sysdesign.png)
+  
+### 1. Skeleton Extraction :
+  
+Skeleton extraction is done at the first part of the main program. Here Openpose library is used to extract the skeleton from the given image. 18 joints are detected and it is drawn on the image and saves it as a new image file. An image information text file is also created using Skeleton library during this phase where each value is a list with 5 values. The list is of the form [action count, clip count, image count,image label, filepath].  The list for each image is saved in the image infromation text file.  As this project is using Malayalam label, the labels were encoded before saving into the text file. 
+  
+![](https://github.com/Amchuz/ISL-to-Malayalam-using-Openpose/blob/master/Images/imginfo.png)
+  
+Openpose also creates a text files consisting the information of each skeleton.  It is also a list with the image information list mentioned above and the values of 18 points. As the values for both x and y coordinates are needed and hence there is 36 values in the list
+  
+![](https://github.com/Amchuz/ISL-to-Malayalam-using-Openpose/blob/master/Images/skltninfo.png)
+  
