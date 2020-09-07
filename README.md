@@ -57,3 +57,9 @@ Openpose also creates a text files consisting the information of each skeleton. 
   
 ![](https://github.com/Amchuz/ISL-to-Malayalam-using-Openpose/blob/master/Images/skltninfo.png)
   
+### 2. Skeleton text files to single file :
+  
+In this phase the skeleton information text files are the input files and these are combined into a single text file using the Skeleton library. This will reduce the time to process the features of each skeleton.
+
+![](https://github.com/Amchuz/ISL-to-Malayalam-using-Openpose/blob/master/Images/singleinfo.png)
+
