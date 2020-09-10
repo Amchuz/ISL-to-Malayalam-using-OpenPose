@@ -1,4 +1,4 @@
-# ISL to Malayalam using Openpose
+# ISL to Malayalam using OpenPose
 
 ![](https://github.com/Amchuz/ISL-to-Malayalam-using-Openpose/blob/master/Images/demo.gif)
   
