@@ -92,7 +92,7 @@ The experimental results of the proposed system.
 
 <img src="https://github.com/Amchuz/ISL-to-Malayalam-using-Openpose/blob/master/Images/result.png" width="500" height="300" />
   
-## Frontend Design : 
+## Front-end Design : 
   
 <img src="https://github.com/Amchuz/ISL-to-Malayalam-using-Openpose/blob/master/Images/fed.gif" width="300" height="550" />
   
